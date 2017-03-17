@@ -1,0 +1,23 @@
+{
+    "name": "t-minus.space",
+    "version": "0.1.0",
+    "description": "Powered by APIs from launchlibrary.net",
+    "main": "build.js",
+    "repository": "git@github.com:drewwyatt/t-minus.space.git",
+    "author": "Drew Wyatt <drew.j.wyatt@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "build": "webpack"
+    },
+    "dependencies": {
+        "ace-css": "^1.1.0",
+        "css-loader": "^0.27.3",
+        "elm-loader": "^0.14.6",
+        "elm-webpack-loader": "^4.2.0",
+        "file-loader": "^0.10.1",
+        "font-awesome": "^4.7.0",
+        "style-loader": "^0.14.1",
+        "url-loader": "^0.5.8",
+        "webpack": "^2.2.1"
+    }
+}

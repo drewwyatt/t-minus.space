@@ -1,10 +1,10 @@
 {
     "version": "0.1.0",
     "summary": "Powered by APIs from launchlibrary.net",
-    "repository": "https://github.com/user/project.git",
+    "repository": "https://github.com/drewwyatt/t-minus.space.git",
     "license": "MIT",
     "source-directories": [
-        "."
+        "src"
     ],
     "exposed-modules": [],
     "dependencies": {
