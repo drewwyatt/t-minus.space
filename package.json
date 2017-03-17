@@ -2,7 +2,7 @@
     "name": "t-minus.space",
     "version": "0.1.0",
     "description": "Powered by APIs from launchlibrary.net",
-    "main": "build.js",
+    "main": "src/index.js",
     "repository": "git@github.com:drewwyatt/t-minus.space.git",
     "author": "Drew Wyatt <drew.j.wyatt@gmail.com>",
     "license": "MIT",
