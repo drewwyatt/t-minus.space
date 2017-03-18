@@ -8,7 +8,8 @@
     "license": "MIT",
     "scripts": {
         "build": "webpack",
-        "package": "elm-package install -y",
+        "install-elm-packages": "elm-package install -y",
+        "postinstall": "yarn run install-elm-packages",
         "start": "webpack-dev-server"
     },
     "dependencies": {

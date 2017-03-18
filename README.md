@@ -3,7 +3,6 @@ Powered by APIs from launchlibrary.net
 
 ## setup
     yarn install
-    yarn run package
 
 ## dev server
     yarn start
