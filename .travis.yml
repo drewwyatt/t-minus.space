@@ -4,7 +4,6 @@ node_js:
 cache: yarn
 script:
 - yarn install
-- yarn run package
 - yarn run build
 deploy:
   provider: s3
