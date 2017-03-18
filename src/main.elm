@@ -1,17 +1,28 @@
 module Main exposing (..)
-import Html exposing (div, h1, text)
-import Html.Attributes exposing (..)
+import Model exposing (Model, initialModel)
+import View exposing (view)
+import Update exposing (update)
+import Navigation exposing (..)
+import Messages as Msgs exposing (Msg)
+import Routing
 
-main : Html.Html msg
-main =
-    div []
-        [ h1 
-            [ style 
-                [ ("text-align", "center")
-                , ("margin", "0")
-                , ("padding", "0")
-                , ("position", "absolute")
-                , ("top", "50%")
-                , ("left", "50%")
-                , ("transform", "translate(-50%, -50%)") ] ] [ text "t-minus.space" ]
-        ]
+init : Location -> ( Model, Cmd Msg )
+init location =
+    let
+        currentRoute =
+            Routing.parseLocation location
+    in
+        ( initialModel currentRoute, Cmd.none )
+
+subscriptions : Model -> Sub Msg
+subscriptions model = 
+    Sub.none
+
+main : Program Never Model Msg
+main = Navigation.program Msgs.OnLocationChange
+    { init = init
+    , view = view
+    , update = update
+    , subscriptions = subscriptions
+    }
+
