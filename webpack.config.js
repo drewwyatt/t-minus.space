@@ -1,22 +1,23 @@
 const path = require("path");
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const elmSource = __dirname + '/elm-stuff';
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
-    app: ["./src/index.js"]
+    app: path.resolve("./src/index.js"),
   },
 
   output: {
-    path: path.resolve(__dirname + "/dist"),
+    path: path.resolve("./dist"),
     filename: "[name].js"
   },
 
   plugins: [
-        new CopyWebpackPlugin([{
-            from: './src/assets',
-            to: './assets'
-        }])
+    new CopyWebpackPlugin([
+      {
+        from: "./src/assets",
+        to: "./assets"
+      }
+    ])
   ],
 
   module: {
@@ -30,25 +31,25 @@ module.exports = {
         exclude: /node_modules/,
         loader: "file-loader",
         options: {
-            name: '[name].[ext]'
+          name: "[name].[ext]"
         }
       },
       {
         test: /\.elm$/,
         exclude: [/elm-stuff/, /node_modules/],
-        loader: 'elm-webpack-loader',
+        loader: "elm-webpack-loader",
         options: {
-            verbose: true,
-            warn: true,
-            cwd: __dirname
-        },
+          verbose: true,
+          warn: true,
+          cwd: __dirname
+        }
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: "url-loader",
         options: {
-            limit: 10000,
-            mimetype: 'application/font-woff'
+          limit: 10000,
+          mimetype: "application/font-woff"
         }
       },
       {
