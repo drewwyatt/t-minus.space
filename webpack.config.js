@@ -48,6 +48,7 @@ module.exports = {
   devServer: {
     inline: true,
     port: 3000,
+    historyApiFallback: true,
     stats: { colors: true }
   }
 };
