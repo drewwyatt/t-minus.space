@@ -8,7 +8,7 @@
     "license": "MIT",
     "scripts": {
         "build": "webpack",
-        "make": "elm-make",
+        "package": "elm-package install -y",
         "start": "webpack-dev-server"
     },
     "dependencies": {
