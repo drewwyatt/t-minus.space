@@ -1,7 +1,7 @@
 module View exposing (..)
 
 import Html exposing (Html, div, text)
-import Model exposing (Model, Route(..))
+import Models exposing (Model, Route(..))
 import Messages as Msgs exposing (Msg)
 import Landing.View exposing (..)
 import NotFound.View exposing (..)

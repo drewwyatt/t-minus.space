@@ -1,4 +1,4 @@
-module Model exposing (..)
+module Models exposing (..)
 
 type Route
     = LandingRoute

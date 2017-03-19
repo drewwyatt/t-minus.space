@@ -1,7 +1,7 @@
 module Update exposing (..)
 
 import Messages as Msgs exposing (Msg(..))
-import Model exposing (Model)
+import Models exposing (Model)
 import Routing exposing (parseLocation)
 
 update : Msg -> Model -> (Model, Cmd msg)

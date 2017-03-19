@@ -1,5 +1,5 @@
 module Main exposing (..)
-import Model exposing (Model, initialModel)
+import Models exposing (Model, initialModel)
 import View exposing (view)
 import Update exposing (update)
 import Navigation exposing (..)
