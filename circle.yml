@@ -1,0 +1,23 @@
+machine:
+  node:
+    version: 7.7.2
+
+general:
+  artifacts:
+    - "dist"
+
+dependencies:
+  override:
+    - yarn
+
+compile:
+  override:
+    - yarn run build
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - aws s3 sync dist s3://${S3_BUCKET} --delete
+
+
