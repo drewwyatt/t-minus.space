@@ -1,5 +1,7 @@
-# t-minus.space
+# t-minus.space 
 Powered by APIs from launchlibrary.net
+
+[![TravisCI](https://travis-ci.org/drewwyatt/t-minus.space.svg?branch=master)](https://travis-ci.org/drewwyatt/t-minus.space)
 
 ## setup
     yarn install
