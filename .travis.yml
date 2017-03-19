@@ -6,6 +6,7 @@ script: yarn run build
 deploy:
   provider: s3
   access_key_id: AKIAIOSBW7GD73DFBEXA
+  skip_cleanup: true
   secret_access_key:
     secure: L0l05UVo12WnOwy9F3ZuBiCASKSq3xv0y5SGlIxCXYA5amVw9l16HvkoS/RrHxXrF6lTPZUq+CchVnOVHTT4yo69eqKr/je4/Kp6+Utqz9CWMBwycS9ETvir2xQDqS+tHmM9d/Ig5Ui4HmSlb6FV9lb/vmJdWGaLFIii7yvBnUFnIOHzID5OX+0UOs27ad23oRUBUty1a47Z6ZNmUl8y/320Xh32bYBdmeJ+zvO6dL1eihuKl3FvW/0uaLgOLLp9bfK2GidFahQ+BTL2fihggHb2L6iEsLpXlDv2eulnz+72pLT8RPq9JC24kkPT6mRUfBd+O4JDKTz9UcwBxgajD2wvD2I5zht1bantYTMMPgp9DQgE1ZWA2+/YTZQG5MO59HYg58sUSNsQxqqq/53npbaMYpWHfsXqQ0UiszXXXsK+6HMyM2pgKaiqd09doA8Nl0Bk4xQd+TpCgbjFqi+oIO8XZ9f7NKZ9j+uljZ2kkeFV96aHgl0GkfmflRnBp1D3+I6j04CQmd5HkAW3Pl69LmD4UzB2FPt+soHFhTHu20D8dvsBEWoc5pEmlHDX++o74eb0fqAj2IHLT6msIqQHdXBUtOZwmbplO5JCKBJIohiOVhuUKYJ6A/NFoBE3FnWrEqstFv+1vWV9qba3n6CHI9/1DFNwI0X4JSEqf/bG/xo=
   bucket: t-minus
