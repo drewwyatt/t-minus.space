@@ -4,6 +4,8 @@ import { AppContainer } from 'react-hot-loader';
 import Root from 'containers/root';
 import { render } from 'react-dom';
 
+// import { configureStore } from 'config';
+
 const elem = document.getElementById('app');
 render(<AppContainer><Root /></AppContainer>, elem);
 

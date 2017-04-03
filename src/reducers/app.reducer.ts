@@ -16,11 +16,11 @@ export const appReducer = (state: AppState = DEFAULT_STATE, action: AppAction | 
             return Object.assign({}, state, {
                 loadingRequests: [
                     ...state.loadingRequests,
-                    action.payload.id
+                    action.payload.key
                 ]
             });
         case DISMISS_LOADING_INDICATOR:
-            const loadingIdx = state.loadingRequests.indexOf(action.payload.id);
+            const loadingIdx = state.loadingRequests.indexOf(action.payload.key);
             return Object.assign({}, state, {
                 loadingRequests: [
                     ...state.loadingRequests.slice(0, loadingIdx),
