@@ -1,0 +1,1 @@
+module.exports = String(process.env.NODE_ENV).toLowerCase() === 'production';

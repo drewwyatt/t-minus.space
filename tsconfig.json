@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "jsx": "preserve",
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "target": "es6"
+  },
+    "exclude": [
+      "node_modules",
+      "dist",
+      "./src/**/*.d.ts"
+  ],
+  "filesGlob": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
+  ]
+}

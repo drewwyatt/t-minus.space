@@ -1,0 +1,1 @@
+module.exports = 'cheap-eval-source-map';
