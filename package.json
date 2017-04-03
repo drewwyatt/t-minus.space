@@ -10,9 +10,11 @@
         "build": "cross-env NODE_ENV=production webpack -p"
     },
     "dependencies": {
+        "@types/node": "^7.0.12",
         "@types/react": "^15.0.21",
         "@types/react-dom": "^0.14.23",
         "@types/react-hot-loader": "^3.0.1",
+        "@types/react-router-dom": "^4.0.3",
         "awesome-typescript-loader": "^3.1.2",
         "babel-core": "^6.24.0",
         "babel-loader": "^6.4.1",
@@ -25,6 +27,8 @@
         "react": "^15.4.2",
         "react-dom": "^15.4.2",
         "react-hot-loader": "3.0.0-beta.6",
+        "react-router-dom": "^4.0.0",
+        "redux": "^3.6.0",
         "typescript": "^2.2.2",
         "webpack": "^2.3.2",
         "webpack-dev-server": "^2.4.2"

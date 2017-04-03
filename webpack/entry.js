@@ -3,7 +3,7 @@ const isProduction = require('./is-production');
 
 const envEntry = isProduction ? [] : [
     'react-hot-loader/patch',
-    'webpack-dev-server/client?http://localhost:8080',
+    'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
 ];
 

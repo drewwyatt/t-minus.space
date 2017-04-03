@@ -1,8 +1,21 @@
 import * as React from 'react';
 
+import { AppContainer } from 'react-hot-loader';
+import Root from 'containers/root';
 import { render } from 'react-dom';
 
-const ele = document.getElementById('app');
-const Hello = () => <h1>Hello, World</h1>;
+const elem = document.getElementById('app');
+render(<AppContainer><Root /></AppContainer>, elem);
 
-render(<Hello />, ele);
+if ((module as any).hot) {
+	(module as any).hot.accept('./containers/root', () => {
+		const RootContainer = require('./containers/root').default;
+		render(
+			<AppContainer>
+				<RootContainer />
+			</AppContainer>,
+			elem
+		);
+	});
+}
+
