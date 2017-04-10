@@ -1,16 +1,17 @@
-import * as createLogger from 'redux-logger';
+import { Store, applyMiddleware, combineReducers, createStore } from 'redux';
+import { routerMiddleware, routerReducer as routing } from 'react-router-redux'
 
-import { Store, applyMiddleware, createStore } from 'redux';
+import { History } from 'history';
+import { createLogger } from 'redux-logger';
+import reducers from 'reducers';
 
-import RootReducer from 'reducers';
-
-const configureStore = (preloadedState: any = {}): Store<any> => {
+const configureStore = (history: History, preloadedState: any = {}): Store<any> => {
     const enhancers = [
-        (createLogger as any)()
+        createLogger(),
     ];
 
-    const middleware = applyMiddleware(...enhancers);
-    const store = createStore(RootReducer, preloadedState, middleware);
+    const middleware = applyMiddleware(...enhancers, routerMiddleware(history));
+    const store = createStore(combineReducers({...reducers, routing }), preloadedState, middleware);
 
     if ((module as any).hot) {
         // Enable Webpack hot module replacement for reducers
