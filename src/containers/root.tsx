@@ -9,7 +9,7 @@ import { Route } from 'react-router-dom';
 const Root = ({ history }: { history: History }) => (
     <ConnectedRouter history={history}>
         <div>
-            <Route exact path="/" component={LaunchListing} />
+            <Route exact path="/" component={LaunchListing as any} />
             <Route path="/launch" component={LaunchDetail} />
         </div>
     </ConnectedRouter>

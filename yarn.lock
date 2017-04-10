@@ -22,6 +22,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-redux@^4.4.38":
+  version "4.4.38"
+  resolved "https://registry.yarnpkg.com/@types/react-redux/-/react-redux-4.4.38.tgz#771c9293fa835107eb5ac2e4ef8d52e54f2ed4ff"
+  dependencies:
+    "@types/react" "*"
+    redux "^3.6.0"
+
 "@types/react-router-dom@^4.0.3":
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-4.0.3.tgz#7073af160d7ed3c30f210a3b55c3fd24e9b5ddfb"
@@ -30,7 +37,7 @@
     "@types/react" "*"
     "@types/react-router" "*"
 
-"@types/react-router-redux@next":
+"@types/react-router-redux@5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@types/react-router-redux/-/react-router-redux-5.0.0.tgz#d635f83d58fb42712c352bc671eee0b0dbc55ee1"
   dependencies:
